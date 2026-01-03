@@ -1,9 +1,5 @@
 README - Detecção de Anomalias em Transações Financeiras
 <div align="center">
-https://img.shields.io/badge/Python-3.8%252B-blue
-https://img.shields.io/badge/Machine%2520Learning-Supervised%2520%2526%2520Unsupervised-orange
-https://img.shields.io/badge/Status-Completo-brightgreen
-https://img.shields.io/badge/License-MIT-green
 
 Identificação de transações fraudulentas com foco em F2-Score e análise de trade-offs de negócio
 
@@ -11,7 +7,7 @@ Visão Geral • Dataset • Metodologia • Resultados • Como Executar • Es
 
 </div>
 📊 Visão Geral
-Este projeto implementa um sistema de detecção de fraudes em transações financeiras utilizando técnicas de aprendizado de máquina supervisionado e não supervisionado. O foco principal está na otimização do F2-Score, métrica que prioriza a detecção de fraudes (recall) enquanto mantém um controle razoável sobre falsos positivos.
+Este projeto implementa um sistema de detecção de fraudes em transações financeiras utilizando técnicas de aprendizado de máquina supervisionado e não supervisionado. O foco principal está na otimização do F2-Score, métrica que prioriza a detecção de fraudes (recall) enquanto mantém um controle razoável sobre falsos positivos.<br>
 
 🎯 Objetivos Principais
 Identificar transações fraudulentas em dados financeiros extremamente desbalanceados
@@ -100,8 +96,8 @@ Instalação
 Clone o repositório:
 
 
-git clone https://github.com/Lyraa-Dev/detection-fraude.git
-cd detection-fraude
+git clone https://github.com/Lyraa-Dev/detection-fraude.git<br>
+cd detection-fraude<br>
 Instale as dependências:
 
 
@@ -113,16 +109,16 @@ Baixe o dataset:
 # https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
 # Coloque creditcard.csv na raiz do projeto
 
-# Opção 2: Usando kaggle API
-kaggle datasets download -d mlg-ulb/creditcardfraud
-unzip creditcardfraud.zip
-Execução
+# Opção 2: Usando kaggle API<br>
+kaggle datasets download -d mlg-ulb/creditcardfraud<br>
+unzip creditcardfraud.zip<br>
+Execução<br>
 Execute o notebook Jupyter:
 
 
 jupyter notebook fraud_detection.ipynb
 
-🧠 Principais Insights
+# 🧠 Principais Insights
 1. F2-Score vs. Acurácia
 Em dados com 0.17% de fraudes, um modelo "ingênuo" que sempre prevê "não fraude" teria 99.83% de acurácia, mas detectaria 0% das fraudes. O F2-Score é essencial para avaliar modelos reais.
 
@@ -166,19 +162,20 @@ Sistema de feedback para falsos positivos/negativos
 
 📁 Estrutura do Projeto
 
-detection-fraude/
-│
-├── creditcard.csv                 # Dataset (não versionado)
-├── fraud_detection.ipynb          # Notebook principal
-├── requirements.txt               # Dependências
-├── README.md                      # Este arquivo
-└── modelos_fraude/                # Pasta para salvar modelos e resultados
-    ├── melhor_modelo.pkl
-    ├── resultados.json
-    └── comparacao_modelos.csv
+detection-fraude/<br>
+│<br>
+├── creditcard.csv                 # Dataset (não versionado)<br>
+├── fraud_detection.ipynb          # Notebook principal<br>
+├── requirements.txt               # Dependências<br>
+├── README.md                      # Este arquivo<br>
+└── modelos_fraude/                # Pasta para salvar modelos e resultados<br>
+   &nbsp;&nbsp;&nbsp;&nbsp; ├── melhor_modelo.pkl<br>
+   &nbsp;&nbsp;&nbsp;&nbsp; ├── resultados.json<br>
+   &nbsp;&nbsp;&nbsp;&nbsp; └── comparacao_modelos.csv<br>
 
 
 
 <div align="center">
+
 
 </div>
